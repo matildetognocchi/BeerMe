@@ -19,8 +19,8 @@ With this in mind, **I've created a project where I can work on:**
    -  The "Reviewed Beers List" view - collect the reviews and notes you add after trying a new beer
    -  The "Breweries Map" view - display a map with the nearest breweries 
 
-3. **👩🏻‍💻 UiKit:**
-   - to be updated
+3. **👩🏻‍💻 Frameworks:**
+   - UiKit
    - to be updated
    - to be updated
    - to be updated
