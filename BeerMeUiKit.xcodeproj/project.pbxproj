@@ -13,7 +13,7 @@
 		F37FC1B82B67F87B00A9AEB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37FC1B62B67F87B00A9AEB4 /* Main.storyboard */; };
 		F37FC1BA2B67F87C00A9AEB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37FC1B92B67F87C00A9AEB4 /* Assets.xcassets */; };
 		F37FC1BD2B67F87C00A9AEB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37FC1BB2B67F87C00A9AEB4 /* LaunchScreen.storyboard */; };
-		F37FC1C52B67F93500A9AEB4 /* SingleBeerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F37FC1C42B67F93500A9AEB4 /* SingleBeerView.xib */; };
+		F3DCC4AD2B861F9700076E41 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC4AC2B861F9700076E41 /* BeerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		F37FC1B92B67F87C00A9AEB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F37FC1BC2B67F87C00A9AEB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F37FC1BE2B67F87C00A9AEB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F37FC1C42B67F93500A9AEB4 /* SingleBeerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleBeerView.xib; sourceTree = "<group>"; };
+		F3DCC4AC2B861F9700076E41 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				F37FC1B02B67F87B00A9AEB4 /* AppDelegate.swift */,
 				F37FC1B22B67F87B00A9AEB4 /* SceneDelegate.swift */,
 				F37FC1B42B67F87B00A9AEB4 /* ViewController.swift */,
-				F37FC1C42B67F93500A9AEB4 /* SingleBeerView.xib */,
+				F3DCC4AC2B861F9700076E41 /* BeerModel.swift */,
 				F37FC1B62B67F87B00A9AEB4 /* Main.storyboard */,
 				F37FC1B92B67F87C00A9AEB4 /* Assets.xcassets */,
 				F37FC1BB2B67F87C00A9AEB4 /* LaunchScreen.storyboard */,
@@ -130,7 +130,6 @@
 			files = (
 				F37FC1BD2B67F87C00A9AEB4 /* LaunchScreen.storyboard in Resources */,
 				F37FC1BA2B67F87C00A9AEB4 /* Assets.xcassets in Resources */,
-				F37FC1C52B67F93500A9AEB4 /* SingleBeerView.xib in Resources */,
 				F37FC1B82B67F87B00A9AEB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37FC1B52B67F87B00A9AEB4 /* ViewController.swift in Sources */,
+				F3DCC4AD2B861F9700076E41 /* BeerModel.swift in Sources */,
 				F37FC1B12B67F87B00A9AEB4 /* AppDelegate.swift in Sources */,
 				F37FC1B32B67F87B00A9AEB4 /* SceneDelegate.swift in Sources */,
 			);

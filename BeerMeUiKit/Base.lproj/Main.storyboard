@@ -1,24 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BeerMeUiKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEER NAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vw0-kE-gLu">
+                                <rect key="frame" x="26" y="59" width="340" height="100"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" adjustable="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Z7W-A9-TcL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ccx-rG-mjo">
+                                <rect key="frame" x="26" y="167.99999999999997" width="340" height="216.33333333333329"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217.66999999999999" id="O2w-0g-xgT"/>
+                                    <constraint firstAttribute="width" constant="340" id="XvK-bQ-rrf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVH-in-61W">
+                                <rect key="frame" x="26" y="445" width="340" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfS-Xw-C9y">
+                                <rect key="frame" x="26" y="476" width="340" height="45"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9lu-fk-SbP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QP-0x-OOO">
+                                <rect key="frame" x="136" y="738" width="121" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="8Nc-fC-Feb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="HgI-9e-nep"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="mPv-pP-bUo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New Beer" cornerStyle="medium" titleAlignment="center">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="newBeerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbB-Aq-Z2y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Style" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVw-Di-1cg">
+                                <rect key="frame" x="26" y="536" width="340" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vzf-kE-dYq">
+                                <rect key="frame" x="26" y="567" width="340" height="45"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Xmj-na-qow"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Malts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-oO-jgR">
+                                <rect key="frame" x="26" y="627" width="340" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLN-gX-atV">
+                                <rect key="frame" x="26" y="658" width="340" height="45"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="e5d-ew-XA5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="12%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YHe-Xh-Pzc">
+                                <rect key="frame" x="309" y="414.66666666666669" width="57" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vzf-kE-dYq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="0pf-H8-YhF"/>
+                            <constraint firstItem="AfS-Xw-C9y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="1R6-hq-zoV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8QP-0x-OOO" secondAttribute="trailing" constant="136" id="1sb-jg-53l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H4g-oO-jgR" secondAttribute="trailing" constant="27" id="31r-8k-Vqr"/>
+                            <constraint firstItem="H4g-oO-jgR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="8lX-Ry-3Po"/>
+                            <constraint firstItem="AfS-Xw-C9y" firstAttribute="top" secondItem="gVH-in-61W" secondAttribute="bottom" constant="10" id="8wK-HK-kVY"/>
+                            <constraint firstItem="Vw0-kE-gLu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8yq-tQ-hVv"/>
+                            <constraint firstItem="Ccx-rG-mjo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="HrT-w8-9he"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GLN-gX-atV" secondAttribute="trailing" constant="27" id="JG3-j3-bnt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vw0-kE-gLu" secondAttribute="trailing" constant="27" id="MwJ-ec-wlT"/>
+                            <constraint firstItem="YHe-Xh-Pzc" firstAttribute="top" secondItem="Ccx-rG-mjo" secondAttribute="bottom" constant="30" id="OFF-5b-UQD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cVw-Di-1cg" secondAttribute="trailing" constant="27" id="T6t-vb-Rw7"/>
+                            <constraint firstItem="YHe-Xh-Pzc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="309" id="TcX-jx-Rbj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8QP-0x-OOO" secondAttribute="bottom" constant="32" id="Ws0-Gs-9IQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YHe-Xh-Pzc" secondAttribute="trailing" constant="27" id="Yuz-AO-q3V"/>
+                            <constraint firstItem="Vzf-kE-dYq" firstAttribute="top" secondItem="cVw-Di-1cg" secondAttribute="bottom" constant="10" id="b3V-dK-e96"/>
+                            <constraint firstItem="GLN-gX-atV" firstAttribute="top" secondItem="H4g-oO-jgR" secondAttribute="bottom" constant="10" id="bO2-aq-hG7"/>
+                            <constraint firstItem="Vw0-kE-gLu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="bT1-ab-6p5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vzf-kE-dYq" secondAttribute="trailing" constant="27" id="cJ0-1o-rfz"/>
+                            <constraint firstItem="H4g-oO-jgR" firstAttribute="top" secondItem="Vzf-kE-dYq" secondAttribute="bottom" constant="15" id="dUe-10-FbI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AfS-Xw-C9y" secondAttribute="trailing" constant="27" id="flx-PF-eLn"/>
+                            <constraint firstItem="GLN-gX-atV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="giM-fe-poP"/>
+                            <constraint firstItem="gVH-in-61W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="hDB-Ba-r8c"/>
+                            <constraint firstItem="gVH-in-61W" firstAttribute="top" secondItem="YHe-Xh-Pzc" secondAttribute="bottom" constant="10" id="kCq-Rh-Yrg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gVH-in-61W" secondAttribute="trailing" constant="27" id="lUN-gW-lQT"/>
+                            <constraint firstItem="cVw-Di-1cg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="liK-Y6-qfw"/>
+                            <constraint firstItem="cVw-Di-1cg" firstAttribute="top" secondItem="AfS-Xw-C9y" secondAttribute="bottom" constant="15" id="opa-YQ-d0Y"/>
+                            <constraint firstItem="8QP-0x-OOO" firstAttribute="top" secondItem="GLN-gX-atV" secondAttribute="bottom" constant="35" id="udY-P4-4st"/>
+                            <constraint firstItem="8QP-0x-OOO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="vuJ-PA-HYh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ccx-rG-mjo" secondAttribute="trailing" constant="27" id="x3s-eg-Vbr"/>
+                            <constraint firstItem="Ccx-rG-mjo" firstAttribute="top" secondItem="Vw0-kE-gLu" secondAttribute="bottom" constant="8" id="xsH-QF-nBB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alcholPercentageView" destination="YHe-Xh-Pzc" id="JjA-fd-iuY"/>
+                        <outlet property="beerBrandNameView" destination="AfS-Xw-C9y" id="dVC-Ji-esy"/>
+                        <outlet property="beerImageView" destination="Ccx-rG-mjo" id="G7e-iB-lqS"/>
+                        <outlet property="beerMaltsView" destination="GLN-gX-atV" id="0QU-pF-9eC"/>
+                        <outlet property="beerNameView" destination="Vw0-kE-gLu" id="T75-u0-3Dl"/>
+                        <outlet property="beerStyleView" destination="Vzf-kE-dYq" id="lSf-C2-9Dn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="81.679389312977094" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo.artframe.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
