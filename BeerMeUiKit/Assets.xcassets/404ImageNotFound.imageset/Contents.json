@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "404ImageNotFound.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
